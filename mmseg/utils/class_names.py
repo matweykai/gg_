@@ -2,6 +2,10 @@
 from mmengine.utils import is_str
 
 
+def gghack_classes():
+    return ['document']
+
+
 def cityscapes_classes():
     """Cityscapes class names for external use."""
     return [
@@ -159,6 +163,9 @@ def mapillary_v1_classes():
         'Truck', 'Wheeled Slow', 'Car Mount', 'Ego Vehicle', 'Unlabeled'
     ]
 
+
+def gghack_palette():
+    return [[255, 0, 0]]
 
 def mapillary_v1_palette():
     """mapillary_v1_ palette for external use."""
@@ -489,6 +496,7 @@ def hsidrive_palette():
 
 
 dataset_aliases = {
+    'gghack': ['gghack'],
     'cityscapes': ['cityscapes'],
     'ade': ['ade', 'ade20k'],
     'voc': ['voc', 'pascal_voc', 'voc12', 'voc12aug'],
