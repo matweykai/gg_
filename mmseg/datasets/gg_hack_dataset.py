@@ -6,8 +6,8 @@ from .basesegdataset import BaseSegDataset
 class GGHackDataset(BaseSegDataset):
 
     METAINFO = dict(
-        classes=('document'),
-        palette=[[255, 0, 0]])
+        classes=('background', 'document'),
+        palette=[[0, 0, 0], [255, 0, 0]])
 
     def __init__(self,
                  img_suffix='.jpg',

@@ -3,7 +3,7 @@ from mmengine.utils import is_str
 
 
 def gghack_classes():
-    return ['document']
+    return ['background', 'document']
 
 
 def cityscapes_classes():
@@ -165,7 +165,7 @@ def mapillary_v1_classes():
 
 
 def gghack_palette():
-    return [[255, 0, 0]]
+    return [[0, 0, 0], [255, 0, 0]]
 
 def mapillary_v1_palette():
     """mapillary_v1_ palette for external use."""
